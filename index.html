@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body onload="typeWriter()">
+    
+
+
+  <!-- start bootstrap 4 and 5 -->
+  
+
+  <div class="container">
+    <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12 text-center">
+            <div class="mainContent mt-4">
+
+                <div class="heading mt-3">
+                    <h1 class="mb-4">Real Time character Counter </h1>
+                    <p>Check your English text for grammar, spelling, and punctuation errors with Ariyan Rumi real time char counter.</p>
+                </div>
+
+                <div class="textAreaSection mt-5">
+                    <textarea maxlength="100"  name="" id="text" cols="40" rows="10"></textarea>
+                    <button class="cbtn">Copy Text</button>
+                </div>  
+                
+                <div class=" mt-4 d-flex justify-content-around charCounter">
+                    <p>Total character: <span class="total">0</span></p>
+                    <p>Remaining: <span class="remain">100</span></p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="copyAlert">
+    <div class="alertBox">
+        <i class="fa fa-check"></i>
+        <h4>Text Coppied😊</h4>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <audio id="pop" src="pop.wav"></audio>
+
+
+<!-- jQuery library -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+<script src="index.js"></script>
+</body>
+</html>

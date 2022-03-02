@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+}
+
+.mainContent{
+    margin: 0 auto;
+}
+h1{
+    font-weight: 700;
+}
+
+.textAreaSection{
+    position: relative;
+}
+
+.cbtn{
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translate(-50%);
+    outline: none;
+    border: none;
+    padding: 10px 26px;
+    background: rgb(17 166 131);
+    color: white;
+    font-weight: 400;
+    border-radius: 5px;
+    transition: all .3s;
+    pointer-events: none;
+}
+
+.btnActive{
+    pointer-events: auto;
+}
+
+
+
+.cbtn:hover{
+    background: rgb(35 200 131)
+}
+
+
+#text{
+    resize: none;
+    box-shadow: 0px 0px 15px 10px rgba(0,0,0,0.1);
+    outline: none;
+    border:none;
+    border:1px solid whitesmoke;
+    padding:1rem ;
+    transition: .2s;
+    border-radius: 10px;
+}
+
+#text::placeholder{
+    color: black;
+}
+
+
+#text:hover{
+    border-color: rgb(17 166 131);;
+}
+
+.copyAlert{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(0.6);
+    transition: .5s;
+}
+
+.alertActive{
+    opacity: 1;
+    pointer-events: auto;
+    transform: scale(1);
+}
+
+.alertBox{
+    background: rgb(17 166 131);
+    width: 250px;
+    height: 100px;
+    display:grid;
+    place-items: center;
+    border-radius: 10px;
+    color: white;
+    font-weight: 400;
+    box-shadow: 0px 0px 10px 10px rgba(0,0,0,0.1);
+}
+
+.alertBox i{
+    margin-top: 8px;
+    background: rgb(17 210 131);
+    padding: 8px 8px;
+    border-radius:50%;
+    font-size: 20px;
+}
